@@ -1,0 +1,15 @@
+PLEASE READ THIS IF YOU WANT TO USE THIS PROGRAM
+
+To use the program correctly, you can use google colab or visual studio code with python or python+jupyter extension.
+below this is a link to google colab, to use that you only need to create a new file and there you go... 
+https://colab.research.google.com/notebooks/io.ipynb
+Don't forget to gather the file in one folder to easily get the file path correctly.
+
+In General data train file, it refer to this line:
+dataset_train_path = os.getcwd() + "/day-train.csv"
+if you get an error on that line, maybe the error is the path of .csv file that not correct.
+
+In Data train predict daily, it refer to this line:
+predict_next_day = pd.read_csv('02-juli.csv', parse_dates=True, index_col=0)
+
+you can get another prediction with only change the .csv file and play again the cell that read the .csv prediction file and that cell below that, not all cells. That's why it useful to use jupyter with cell-based python programming to play some line of code repeatedly.
